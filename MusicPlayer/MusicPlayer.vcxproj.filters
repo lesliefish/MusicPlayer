@@ -31,6 +31,12 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+    <Filter Include="src\ui\Public">
+      <UniqueIdentifier>{48a63952-6e71-4c91-8ec2-d9d8b2bb5ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\Public\FramelessWidget">
+      <UniqueIdentifier>{7e1e4aa3-2351-4cfe-b315-5c6d2c8d87a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -42,6 +48,9 @@
     <ClCompile Include="src\ui\MusicInfoPage\MusicInfoPage.cpp">
       <Filter>src\ui\MusicInfoPage</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\Public\FramelessWidget\FramelessWidget.cpp">
+      <Filter>src\ui\Public\FramelessWidget</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui">
@@ -50,6 +59,9 @@
     <QtUic Include="src\ui\MusicInfoPage\MusicInfoPage.ui">
       <Filter>src\ui\MusicInfoPage</Filter>
     </QtUic>
+    <QtUic Include="src\ui\Public\FramelessWidget\FramelessWidget.ui">
+      <Filter>src\ui\Public\FramelessWidget</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\ui\MainWindow\MainWindow.h">
@@ -57,6 +69,9 @@
     </QtMoc>
     <QtMoc Include="src\ui\MusicInfoPage\MusicInfoPage.h">
       <Filter>src\ui\MusicInfoPage</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\Public\FramelessWidget\FramelessWidget.h">
+      <Filter>src\ui\Public\FramelessWidget</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>
