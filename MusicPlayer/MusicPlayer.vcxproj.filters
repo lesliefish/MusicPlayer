@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{87418bdf-4e0d-4303-b3ce-4cf1e2e012d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{c7d9167e-26c9-43c1-8acd-3a38f5135c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\MainWindow">
+      <UniqueIdentifier>{344878a1-da4c-4125-8b97-aea89f387aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model">
+      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
+      <Filter>src\ui\MainWindow</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\ui\MainWindow\MainWindow.ui">
+      <Filter>src\ui\MainWindow</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\ui\MainWindow\MainWindow.h">
+      <Filter>src\ui\MainWindow</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
