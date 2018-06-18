@@ -13,6 +13,24 @@
     <Filter Include="src\model">
       <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\ui\MusicInfoPage">
+      <UniqueIdentifier>{1fb1873b-482a-49cc-b8f8-1f8f0c4fe955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -21,15 +39,24 @@
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
       <Filter>src\ui\MainWindow</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\MusicInfoPage\MusicInfoPage.cpp">
+      <Filter>src\ui\MusicInfoPage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui">
       <Filter>src\ui\MainWindow</Filter>
     </QtUic>
+    <QtUic Include="src\ui\MusicInfoPage\MusicInfoPage.ui">
+      <Filter>src\ui\MusicInfoPage</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\ui\MainWindow\MainWindow.h">
       <Filter>src\ui\MainWindow</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\MusicInfoPage\MusicInfoPage.h">
+      <Filter>src\ui\MusicInfoPage</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>
