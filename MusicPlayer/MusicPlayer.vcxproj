@@ -43,6 +43,9 @@
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;.\src\ui\MainWindow;.\src\ui\MusicInfoPage;.\src\ui\Public\FramelessWidget;.\src\ui\WinTitle</IncludePath>
     </QtMoc>
   </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="res\MusicPlayer.qrc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
     <Keyword>Qt4VSv1.0</Keyword>

@@ -40,6 +40,9 @@
     <Filter Include="src\ui\WinTitle">
       <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{22e99de2-ce9e-4f34-8c3f-d6b04df5f2d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -82,5 +85,10 @@
     <QtMoc Include="src\ui\WinTitle\WinTitle.h">
       <Filter>src\ui\WinTitle</Filter>
     </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="res\MusicPlayer.qrc">
+      <Filter>res</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>
