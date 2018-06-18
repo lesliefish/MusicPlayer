@@ -37,6 +37,9 @@
     <Filter Include="src\ui\Public\FramelessWidget">
       <UniqueIdentifier>{7e1e4aa3-2351-4cfe-b315-5c6d2c8d87a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\ui\WinTitle">
+      <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="src\ui\Public\FramelessWidget\FramelessWidget.cpp">
       <Filter>src\ui\Public\FramelessWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\WinTitle\WinTitle.cpp">
+      <Filter>src\ui\WinTitle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +78,9 @@
     </QtMoc>
     <QtMoc Include="src\ui\Public\FramelessWidget\FramelessWidget.h">
       <Filter>src\ui\Public\FramelessWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\WinTitle\WinTitle.h">
+      <Filter>src\ui\WinTitle</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>
