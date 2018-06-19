@@ -100,4 +100,9 @@
       <Filter>Resources</Filter>
     </QtRcc>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MusicPlayer.qss">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
 </Project>

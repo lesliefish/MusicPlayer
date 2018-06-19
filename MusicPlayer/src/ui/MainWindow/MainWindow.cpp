@@ -37,6 +37,15 @@ void MainWindow::initUi()
     this->setContentsMargins(0, 0, 0, 0);
 
     this->setFixedSize(QSize(300,120));
+
+    // style
+    QFile file("./res/MusicPlayer.qss");
+    if (file.exists() && file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        QString style = file.readAll();
+        std::string str = style.toStdString();
+        this->setStyleSheet(QString::fromStdString(str));
+    }
 }
 
 void MainWindow::initConnect()

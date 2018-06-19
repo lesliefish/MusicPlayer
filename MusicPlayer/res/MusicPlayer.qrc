@@ -5,5 +5,9 @@
         <file>play.png</file>
         <file>previous.png</file>
         <file>volume.png</file>
+        <file>list.png</file>
+        <file>non-volume.png</file>
+        <file>min.png</file>
+        <file>close.png</file>
     </qresource>
 </RCC>
