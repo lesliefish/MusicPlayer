@@ -6,11 +6,6 @@
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-      <ParseFiles>true</ParseFiles>
-    </Filter>
     <Filter Include="Form Files">
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
@@ -19,71 +14,71 @@
     <Filter Include="res">
       <UniqueIdentifier>{22e99de2-ce9e-4f34-8c3f-d6b04df5f2d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src">
-      <UniqueIdentifier>{87418bdf-4e0d-4303-b3ce-4cf1e2e012d5}</UniqueIdentifier>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f32c0ac4-ef3d-41e2-958c-0a9886b24485}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui">
+    <Filter Include="Source Files\model">
+      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
       <UniqueIdentifier>{c7d9167e-26c9-43c1-8acd-3a38f5135c15}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui\MainWindow">
+    <Filter Include="Source Files\ui\MainWindow">
       <UniqueIdentifier>{344878a1-da4c-4125-8b97-aea89f387aae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui\MusicInfoPage">
+    <Filter Include="Source Files\ui\MusicInfoPage">
       <UniqueIdentifier>{1fb1873b-482a-49cc-b8f8-1f8f0c4fe955}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui\Public">
+    <Filter Include="Source Files\ui\Public">
       <UniqueIdentifier>{48a63952-6e71-4c91-8ec2-d9d8b2bb5ce9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui\Public\FramelessWidget">
+    <Filter Include="Source Files\ui\Public\FramelessWidget">
       <UniqueIdentifier>{7e1e4aa3-2351-4cfe-b315-5c6d2c8d87a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src\ui\WinTitle">
+    <Filter Include="Source Files\ui\WinTitle">
       <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\src\model">
-      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
-      <Filter>Source Files\src\ui\MainWindow</Filter>
+      <Filter>Source Files\ui\MainWindow</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\MusicInfoPage\MusicInfoPage.cpp">
-      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\ui\MusicInfoPage</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\Public\FramelessWidget\FramelessWidget.cpp">
-      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\ui\Public\FramelessWidget</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\WinTitle\WinTitle.cpp">
-      <Filter>Source Files\src\ui\WinTitle</Filter>
+      <Filter>Source Files\ui\WinTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui">
-      <Filter>Source Files\src\ui\MainWindow</Filter>
+      <Filter>Source Files\ui\MainWindow</Filter>
     </QtUic>
     <QtUic Include="src\ui\MusicInfoPage\MusicInfoPage.ui">
-      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\ui\MusicInfoPage</Filter>
     </QtUic>
     <QtUic Include="src\ui\Public\FramelessWidget\FramelessWidget.ui">
-      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\ui\Public\FramelessWidget</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\ui\MainWindow\MainWindow.h">
-      <Filter>Source Files\src\ui\MainWindow</Filter>
+      <Filter>Source Files\ui\MainWindow</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\MusicInfoPage\MusicInfoPage.h">
-      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\ui\MusicInfoPage</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\Public\FramelessWidget\FramelessWidget.h">
-      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\ui\Public\FramelessWidget</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\WinTitle\WinTitle.h">
-      <Filter>Source Files\src\ui\WinTitle</Filter>
+      <Filter>Source Files\ui\WinTitle</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
