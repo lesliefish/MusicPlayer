@@ -1,21 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="src">
-      <UniqueIdentifier>{87418bdf-4e0d-4303-b3ce-4cf1e2e012d5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\ui">
-      <UniqueIdentifier>{c7d9167e-26c9-43c1-8acd-3a38f5135c15}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\ui\MainWindow">
-      <UniqueIdentifier>{344878a1-da4c-4125-8b97-aea89f387aae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\model">
-      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\ui\MusicInfoPage">
-      <UniqueIdentifier>{1fb1873b-482a-49cc-b8f8-1f8f0c4fe955}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -31,59 +16,74 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
-    <Filter Include="src\ui\Public">
-      <UniqueIdentifier>{48a63952-6e71-4c91-8ec2-d9d8b2bb5ce9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\ui\Public\FramelessWidget">
-      <UniqueIdentifier>{7e1e4aa3-2351-4cfe-b315-5c6d2c8d87a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\ui\WinTitle">
-      <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="res">
       <UniqueIdentifier>{22e99de2-ce9e-4f34-8c3f-d6b04df5f2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{87418bdf-4e0d-4303-b3ce-4cf1e2e012d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui">
+      <UniqueIdentifier>{c7d9167e-26c9-43c1-8acd-3a38f5135c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui\MainWindow">
+      <UniqueIdentifier>{344878a1-da4c-4125-8b97-aea89f387aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui\MusicInfoPage">
+      <UniqueIdentifier>{1fb1873b-482a-49cc-b8f8-1f8f0c4fe955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui\Public">
+      <UniqueIdentifier>{48a63952-6e71-4c91-8ec2-d9d8b2bb5ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui\Public\FramelessWidget">
+      <UniqueIdentifier>{7e1e4aa3-2351-4cfe-b315-5c6d2c8d87a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ui\WinTitle">
+      <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\model">
+      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
-      <Filter>src</Filter>
+      <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
-      <Filter>src\ui\MainWindow</Filter>
+      <Filter>Source Files\src\ui\MainWindow</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\MusicInfoPage\MusicInfoPage.cpp">
-      <Filter>src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\Public\FramelessWidget\FramelessWidget.cpp">
-      <Filter>src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
     </ClCompile>
     <ClCompile Include="src\ui\WinTitle\WinTitle.cpp">
-      <Filter>src\ui\WinTitle</Filter>
+      <Filter>Source Files\src\ui\WinTitle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui">
-      <Filter>src\ui\MainWindow</Filter>
+      <Filter>Source Files\src\ui\MainWindow</Filter>
     </QtUic>
     <QtUic Include="src\ui\MusicInfoPage\MusicInfoPage.ui">
-      <Filter>src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
     </QtUic>
     <QtUic Include="src\ui\Public\FramelessWidget\FramelessWidget.ui">
-      <Filter>src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\ui\MainWindow\MainWindow.h">
-      <Filter>src\ui\MainWindow</Filter>
+      <Filter>Source Files\src\ui\MainWindow</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\MusicInfoPage\MusicInfoPage.h">
-      <Filter>src\ui\MusicInfoPage</Filter>
+      <Filter>Source Files\src\ui\MusicInfoPage</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\Public\FramelessWidget\FramelessWidget.h">
-      <Filter>src\ui\Public\FramelessWidget</Filter>
+      <Filter>Source Files\src\ui\Public\FramelessWidget</Filter>
     </QtMoc>
     <QtMoc Include="src\ui\WinTitle\WinTitle.h">
-      <Filter>src\ui\WinTitle</Filter>
+      <Filter>Source Files\src\ui\WinTitle</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
