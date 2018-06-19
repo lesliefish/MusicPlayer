@@ -11,11 +11,10 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
-    <Filter Include="res">
-      <UniqueIdentifier>{22e99de2-ce9e-4f34-8c3f-d6b04df5f2d9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{f32c0ac4-ef3d-41e2-958c-0a9886b24485}</UniqueIdentifier>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
     </Filter>
     <Filter Include="Source Files\model">
       <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
@@ -38,6 +37,12 @@
     <Filter Include="Source Files\ui\WinTitle">
       <UniqueIdentifier>{22e1acb5-9ef4-498b-8b2a-66ff4fe7844e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{22e99de2-ce9e-4f34-8c3f-d6b04df5f2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui\PlayControlPage">
+      <UniqueIdentifier>{e624d1e9-3274-438f-a2bf-a77d423e607e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
@@ -55,6 +60,9 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ui\PlayControlPage\PlayControlPage.cpp">
+      <Filter>Source Files\ui\PlayControlPage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui">
@@ -65,6 +73,9 @@
     </QtUic>
     <QtUic Include="src\ui\Public\FramelessWidget\FramelessWidget.ui">
       <Filter>Source Files\ui\Public\FramelessWidget</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\PlayControlPage\PlayControlPage.ui">
+      <Filter>Source Files\ui\PlayControlPage</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
@@ -80,10 +91,13 @@
     <QtMoc Include="src\ui\WinTitle\WinTitle.h">
       <Filter>Source Files\ui\WinTitle</Filter>
     </QtMoc>
+    <QtMoc Include="src\ui\PlayControlPage\PlayControlPage.h">
+      <Filter>Source Files\ui\PlayControlPage</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="res\MusicPlayer.qrc">
-      <Filter>res</Filter>
+      <Filter>Resources</Filter>
     </QtRcc>
   </ItemGroup>
 </Project>
