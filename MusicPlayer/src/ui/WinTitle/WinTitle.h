@@ -11,8 +11,14 @@ class WinTitle : public QWidget
 public:
     WinTitle(QWidget *parent);
     ~WinTitle();
+signals:
+    void signalClose();
+    void signalShowMini();
+
 private:
     void initUi();
+    void initConnect();
+
 private:
     QPushButton* m_minBtn;
     QPushButton* m_closeBtn;

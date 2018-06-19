@@ -12,5 +12,8 @@ public:
     ~PlayControlPage();
 
 private:
+    void initUi();
+
+private:
     Ui::PlayControlPage *ui;
 };

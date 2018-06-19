@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 	ui = new Ui::MainWindow();
 	ui->setupUi(this);
     initUi();
+    initConnect();
 }
 
 MainWindow::~MainWindow()
@@ -35,10 +36,17 @@ void MainWindow::initUi()
     this->setLayout(vLayout);
     this->setContentsMargins(0, 0, 0, 0);
 
-    this->setFixedSize(QSize(300,100));
+    this->setFixedSize(QSize(300,120));
 }
 
 void MainWindow::initConnect()
 {
-
+    connect(m_winTitle, &WinTitle::signalClose, this, [this]() 
+    {
+        this->close();
+    });
+    connect(m_winTitle, &WinTitle::signalShowMini, this, [this]()
+    {
+        this->showMinimized();
+    });
 }

@@ -4,6 +4,7 @@ WinTitle::WinTitle(QWidget *parent)
     : QWidget(parent)
 {
     initUi();
+    initConnect();
 }
 
 WinTitle::~WinTitle()
@@ -28,4 +29,17 @@ void WinTitle::initUi()
     layout->setSpacing(0);
     this->setLayout(layout);
     this->setContentsMargins(QMargins(0,0,0,0));
+}
+
+void WinTitle::initConnect()
+{
+    connect(m_closeBtn, &QPushButton::clicked, this, [this]() 
+    {
+        emit signalClose();  
+    });
+
+    connect(m_minBtn, &QPushButton::clicked, this, [this]()
+    {
+        emit signalShowMini();
+    });
 }
