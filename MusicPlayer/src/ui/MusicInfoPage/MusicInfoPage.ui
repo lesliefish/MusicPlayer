@@ -31,6 +31,9 @@
    </property>
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>9</number>
+     </property>
      <item>
       <widget class="QLabel" name="musicImageLabel">
        <property name="minimumSize">
@@ -46,12 +49,21 @@
         </size>
        </property>
        <property name="text">
-        <string>music pic</string>
+        <string>Leslie</string>
        </property>
       </widget>
      </item>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
        <item>
         <widget class="QLabel" name="musicNameLabel">
          <property name="minimumSize">
@@ -67,7 +79,7 @@
           </size>
          </property>
          <property name="text">
-          <string>music name</string>
+          <string>未来之歌</string>
          </property>
         </widget>
        </item>
@@ -86,7 +98,7 @@
           </size>
          </property>
          <property name="text">
-          <string>singer</string>
+          <string>张国荣</string>
          </property>
         </widget>
        </item>

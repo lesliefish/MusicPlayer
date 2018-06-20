@@ -1,6 +1,6 @@
 QWidget
 {
-	background : #D7188A;
+	background : orange;
 	color : white;
 	font-family : microsoft yahei;
 	border-radius : 50px;

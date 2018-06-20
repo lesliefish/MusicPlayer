@@ -26,14 +26,20 @@ void FramelessWidget::mousePressEvent(QMouseEvent * event)
     {
         m_pointMove = event->globalPos() - pos();
         event->accept();
+        m_dragWindow = true;
     }
 }
 
 void FramelessWidget::mouseMoveEvent(QMouseEvent * event)
 {
-    if (event->buttons() & Qt::LeftButton)
+    if ((event->buttons() & Qt::LeftButton) && m_dragWindow)
     {
         move(event->globalPos() - m_pointMove);
         event->accept();
     }
+}
+
+void FramelessWidget::mouseReleaseEvent(QMouseEvent *event)
+{
+    m_dragWindow = false;
 }
