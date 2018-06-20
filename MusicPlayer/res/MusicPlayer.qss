@@ -10,3 +10,56 @@ QPushButton
 {
 	border:none;
 }
+
+QScrollBar:horizontal
+{
+	height:10px;
+	border-radius:5px;
+	margin:0px,0px,0px,0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+QScrollBar::handle:horizontal
+{
+	background:lightblue;
+	border:0px solid #525252;
+	width:2px;
+}
+QScrollBar::handle:horizontal::disabled
+{
+	background:#232329;
+}
+QScrollBar::handle:horizontal:hover
+{
+	background:#333333;
+}
+QScrollBar::add-line:horizontal
+{
+	width:0px;
+	background:red;
+}
+
+QScrollBar::sub-line:horizontal
+{
+	width:0px;
+	background:red;
+}
+
+QScrollBar::add-page:horizontal
+{
+	background:#999999;
+}
+
+QScrollBar::sub-page:horizontal
+{
+	background:green;
+}
+
+QScrollBar::up-arrow:horizontal
+{
+
+}
+QScrollBar::down-arrow:horizontal
+{
+
+}
