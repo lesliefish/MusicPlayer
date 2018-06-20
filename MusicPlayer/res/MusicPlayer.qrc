@@ -9,5 +9,6 @@
         <file>non-volume.png</file>
         <file>min.png</file>
         <file>close.png</file>
+        <file>title_icon.jpg</file>
     </qresource>
 </RCC>
