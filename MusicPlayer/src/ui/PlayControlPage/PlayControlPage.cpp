@@ -7,6 +7,7 @@ PlayControlPage::PlayControlPage(QWidget *parent)
     ui = new Ui::PlayControlPage();
     ui->setupUi(this);
     initUi();
+    initConnect();
 }
 
 PlayControlPage::~PlayControlPage()
@@ -21,4 +22,12 @@ void PlayControlPage::initUi()
     ui->playBtn->setIcon(QIcon(":/new/player/play.png"));
     ui->volumeBtn->setIcon(QIcon(":/new/player/volume.png"));
     ui->listBtn->setIcon(QIcon(":/new/player/list.png"));
+}
+
+void PlayControlPage::initConnect()
+{
+    connect(ui->playBtn, &QPushButton::clicked, [this]()
+    { 
+        emit signalPlay(); 
+    });
 }

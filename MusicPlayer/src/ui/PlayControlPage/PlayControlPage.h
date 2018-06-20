@@ -11,9 +11,11 @@ public:
     PlayControlPage(QWidget *parent = Q_NULLPTR);
     ~PlayControlPage();
 
+signals:
+    void signalPlay();
 private:
     void initUi();
-
+    void initConnect();
 private:
     Ui::PlayControlPage *ui;
 };

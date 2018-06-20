@@ -68,13 +68,13 @@
         <widget class="QLabel" name="musicNameLabel">
          <property name="minimumSize">
           <size>
-           <width>150</width>
+           <width>210</width>
            <height>25</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>150</width>
+           <width>66666</width>
            <height>25</height>
           </size>
          </property>
@@ -87,13 +87,13 @@
         <widget class="QLabel" name="singerLabel">
          <property name="minimumSize">
           <size>
-           <width>150</width>
+           <width>210</width>
            <height>25</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>150</width>
+           <width>6666</width>
            <height>25</height>
           </size>
          </property>

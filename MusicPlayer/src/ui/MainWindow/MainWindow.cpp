@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
 	delete ui;
+    delete m_player;
 }
 
 void MainWindow::initUi()
@@ -46,6 +47,9 @@ void MainWindow::initUi()
         std::string str = style.toStdString();
         this->setStyleSheet(QString::fromStdString(str));
     }
+
+    m_player = new Player();
+    m_player->addMusic("C:/Users/Public/Music/Sample Music/Kalimba.mp3");
 }
 
 void MainWindow::initConnect()
@@ -57,5 +61,10 @@ void MainWindow::initConnect()
     connect(m_winTitle, &WinTitle::signalShowMini, this, [this]()
     {
         this->showMinimized();
+    });
+
+    connect(m_playControlPage, &PlayControlPage::signalPlay, this, [this]()
+    {
+        m_player->play();
     });
 }

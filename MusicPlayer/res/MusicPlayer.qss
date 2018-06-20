@@ -1,6 +1,6 @@
 QWidget
 {
-	background : orange;
+	background :orange;
 	color : white;
 	font-family : microsoft yahei;
 	border-radius : 50px;
@@ -9,6 +9,7 @@ QWidget
 QPushButton
 {
 	border:none;
+	border-radius:16px;
 }
 
 QScrollBar:horizontal

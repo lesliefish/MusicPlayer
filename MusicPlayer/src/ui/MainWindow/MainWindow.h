@@ -5,6 +5,7 @@
 #include "MusicInfoPage.h"
 #include "WinTitle.h"
 #include "PlayControlPage.h"
+#include "Player.h"
 
 namespace Ui { class MainWindow; };
 
@@ -25,4 +26,5 @@ private:
     MusicInfoPage* m_musicInfoPage{ nullptr };
     WinTitle* m_winTitle{ nullptr };
     PlayControlPage* m_playControlPage{ nullptr };
+    Player* m_player{ nullptr };
 };

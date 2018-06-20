@@ -43,6 +43,9 @@
     <Filter Include="Source Files\ui\PlayControlPage">
       <UniqueIdentifier>{e624d1e9-3274-438f-a2bf-a77d423e607e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\model\Player">
+      <UniqueIdentifier>{b64af48d-fb01-477b-9b22-00a4de6d748d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp">
@@ -62,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="src\ui\PlayControlPage\PlayControlPage.cpp">
       <Filter>Source Files\ui\PlayControlPage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\Player\Player.cpp">
+      <Filter>Source Files\model\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +99,9 @@
     </QtMoc>
     <QtMoc Include="src\ui\PlayControlPage\PlayControlPage.h">
       <Filter>Source Files\ui\PlayControlPage</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\Player\Player.h">
+      <Filter>Source Files\model\Player</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
