@@ -16,9 +16,6 @@
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
-    <Filter Include="Source Files\model">
-      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ui">
       <UniqueIdentifier>{c7d9167e-26c9-43c1-8acd-3a38f5135c15}</UniqueIdentifier>
     </Filter>
@@ -43,7 +40,10 @@
     <Filter Include="Source Files\ui\PlayControlPage">
       <UniqueIdentifier>{e624d1e9-3274-438f-a2bf-a77d423e607e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\model\Player">
+    <Filter Include="Source Files\module">
+      <UniqueIdentifier>{b9463d73-3cbb-4d03-aad2-d60853156ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\module\Player">
       <UniqueIdentifier>{b64af48d-fb01-477b-9b22-00a4de6d748d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -66,8 +66,8 @@
     <ClCompile Include="src\ui\PlayControlPage\PlayControlPage.cpp">
       <Filter>Source Files\ui\PlayControlPage</Filter>
     </ClCompile>
-    <ClCompile Include="src\model\Player\Player.cpp">
-      <Filter>Source Files\model\Player</Filter>
+    <ClCompile Include="src\module\Player\Player.cpp">
+      <Filter>Source Files\module\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -100,8 +100,8 @@
     <QtMoc Include="src\ui\PlayControlPage\PlayControlPage.h">
       <Filter>Source Files\ui\PlayControlPage</Filter>
     </QtMoc>
-    <QtMoc Include="src\model\Player\Player.h">
-      <Filter>Source Files\model\Player</Filter>
+    <QtMoc Include="src\module\Player\Player.h">
+      <Filter>Source Files\module\Player</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
