@@ -13,6 +13,9 @@ public:
 
 signals:
     void signalPlay();
+    void signalNext();
+    void signalPrevious();
+    void signalStop();
 private:
     void initUi();
     void initConnect();

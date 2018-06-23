@@ -69,4 +69,19 @@ void MainWindow::initConnect()
     {
         m_player->play();
     });
+
+    connect(m_playControlPage, &PlayControlPage::signalNext, this, [this]()
+    {
+        m_player->next();
+    });
+
+    connect(m_playControlPage, &PlayControlPage::signalPrevious, this, [this]()
+    {
+        m_player->previous();
+    });
+
+    connect(m_playControlPage, &PlayControlPage::signalStop, this, [this]()
+    {
+        m_player->stop();
+    });
 }

@@ -1,13 +1,21 @@
 QWidget
 {
-	background :orange;
-	color : white;
+	background : lightyellow;
+	color : darkblue;
 	font-family : microsoft yahei;
+	font-size:11px;
 	border-radius : 50px;
 }
 
 QPushButton
 {
+	border:none;
+	border-radius:16px;
+}
+
+QPushButton:hover
+{
+	background:red;
 	border:none;
 	border-radius:16px;
 }

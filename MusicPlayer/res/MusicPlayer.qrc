@@ -10,5 +10,7 @@
         <file>min.png</file>
         <file>close.png</file>
         <file>title_icon.jpg</file>
+        <file>stop.png</file>
+        <file>plus.png</file>
     </qresource>
 </RCC>

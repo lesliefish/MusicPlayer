@@ -15,7 +15,6 @@ public:
 public:
     void stop();
     void next();
-    void pause();
     void play();
     void previous();
     void addMusic(const QString& path);

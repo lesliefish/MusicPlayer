@@ -30,19 +30,15 @@ void Player::next()
     m_playerList->next();
 }
 
-void Player::pause()
-{
-    if (m_mediaPlayer->state() == QMediaPlayer::PlayingState)
-    {
-        m_mediaPlayer->pause();
-    }
-}
-
 void Player::play()
 {
     if (m_mediaPlayer->state() != QMediaPlayer::PlayingState)
     {
         m_mediaPlayer->play();
+    }
+    else
+    {
+        m_mediaPlayer->pause();
     }
 }
 
