@@ -1,28 +1,66 @@
-QWidget
+QWidget#mainPage
 {
-	background : lightyellow;
-	color : darkblue;
+	background : qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:2, fx:0.284, fy:0.324, stop:0 rgba(16, 164, 198, 255), stop:1 rgba(255, 255, 255, 255));
+	color : white;
+	border-radius:5px;
+}
+
+QToolButton
+{
+	border:none;
+	color:white;
 	font-family : microsoft yahei;
-	font-size:11px;
-	border-radius : 50px;
+	font-size:13px;
+}
+
+QToolButton:hover
+{
+	background:red;
+	border:none;
+}
+
+QLabel
+{
+	border:none;
+	color:white;
+	font-family : microsoft yahei;
+	font-size:14px;
 }
 
 QPushButton
 {
 	border:none;
-	border-radius:16px;
+	border-radius:0px;
+	color:white;
 }
 
 QPushButton:hover
 {
 	background:red;
 	border:none;
-	border-radius:16px;
+	border-radius:0px;
+}
+
+QWidget#winTitle
+{
+	background : qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:2, fx:0.284, fy:0.324, stop:0 rgba(16, 164, 198, 255), stop:1 rgba(255, 255, 255, 255));
+	color : white;
+	font-family : microsoft yahei;
+	font-size:15px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+
+QPushButton#m_closeBtn
+{
+	border:none;
+	border-radius:0px;
+	color:white;
 }
 
 QScrollBar:horizontal
 {
-	height:10px;
+	height:3px;
 	border-radius:5px;
 	margin:0px,0px,0px,0px;
 	padding-left:0px;

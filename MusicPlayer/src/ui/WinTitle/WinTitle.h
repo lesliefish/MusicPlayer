@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QLabel>
 #include <QVBoxLayout>
 
 class WinTitle : public QWidget
@@ -20,6 +21,8 @@ private:
     void initConnect();
 
 private:
-    QPushButton* m_minBtn;
-    QPushButton* m_closeBtn;
+    QWidget * m_mainWidget{ nullptr };
+    QLabel * m_titleBtn{ nullptr };
+    QPushButton * m_minBtn{ nullptr };
+    QPushButton * m_closeBtn{ nullptr };
 };

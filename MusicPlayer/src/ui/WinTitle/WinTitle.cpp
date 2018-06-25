@@ -13,23 +13,36 @@ WinTitle::~WinTitle()
 
 void WinTitle::initUi()
 {
-    QSize iconSize(24, 24);
+    m_mainWidget = new QWidget(this);
+    m_mainWidget->setObjectName("winTitle");
+    QSize iconSize(32, 24);
+    m_titleBtn = new QLabel();
+    m_titleBtn->setFixedHeight(24);
+    m_titleBtn->setText(tr("Music Player"));
+
     m_minBtn = new QPushButton();
     m_minBtn->setFixedSize(iconSize);
-
     m_closeBtn = new QPushButton();
     m_closeBtn->setFixedSize(iconSize);
 
-    QVBoxLayout* layout = new QVBoxLayout();
+    QHBoxLayout* layout = new QHBoxLayout();
+    layout->addWidget(m_titleBtn);
+    layout->addStretch();
     layout->addWidget(m_minBtn);
     layout->addWidget(m_closeBtn);
-    layout->setContentsMargins(0,0,0,0);
+    layout->setContentsMargins(6,0,0,0);
     layout->setSpacing(0);
-    this->setLayout(layout);
-    this->setContentsMargins(QMargins(0,0,0,0));
+    m_mainWidget->setLayout(layout);
+    m_mainWidget->setContentsMargins(QMargins(0,0,0,0));
 
-    m_closeBtn->setIcon(QIcon(":/new/player/close.png"));
-    m_minBtn->setIcon(QIcon(":/new/player/min.png"));
+    QGridLayout* gridLayout = new QGridLayout();
+    gridLayout->addWidget(m_mainWidget);
+    gridLayout->setContentsMargins(QMargins(0, 0, 0, 0));
+    this->setLayout(gridLayout);
+    this->setContentsMargins(QMargins(0, 0, 0, 0));
+
+    m_closeBtn->setText(QString::fromLocal8Bit("¡Á"));
+    m_minBtn->setText("-");
 }
 
 void WinTitle::initConnect()

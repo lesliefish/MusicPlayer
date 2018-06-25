@@ -18,18 +18,18 @@ MainWindow::~MainWindow()
 
 void MainWindow::initUi()
 {
+    this->setAttribute(Qt::WA_TranslucentBackground);
     m_winTitle = new WinTitle(ui->mainPage);
     m_musicInfoPage = new MusicInfoPage(ui->mainPage);
     m_playControlPage = new PlayControlPage(ui->mainPage);
 
     QHBoxLayout* topLayout = new QHBoxLayout();
     topLayout->addWidget(m_musicInfoPage);
-    topLayout->addStretch();
-    topLayout->addWidget(m_winTitle);
     topLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->setSpacing(0);
 
     QVBoxLayout* vLayout = new QVBoxLayout();
+    vLayout->addWidget(m_winTitle);
     vLayout->addLayout(topLayout);
     vLayout->addWidget(m_playControlPage);
     vLayout->setContentsMargins(0, 0, 0, 0);
@@ -37,7 +37,7 @@ void MainWindow::initUi()
     ui->mainPage->setLayout(vLayout);
     ui->mainPage->setContentsMargins(0, 0, 0, 0);
 
-    this->setFixedSize(QSize(300,120));
+    this->setFixedSize(QSize(300,150));
     this->setWindowTitle(tr("Music Player"));
     this->setWindowIcon(QIcon(":/new/player/title_icon.jpg"));
 
@@ -46,8 +46,7 @@ void MainWindow::initUi()
     if (file.exists() && file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         QString style = file.readAll();
-        std::string str = style.toStdString();
-        this->setStyleSheet(QString::fromStdString(str));
+        this->setStyleSheet(style);
     }
 
     m_player = new Player();

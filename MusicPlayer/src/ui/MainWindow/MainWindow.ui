@@ -30,11 +30,17 @@
     <number>0</number>
    </property>
    <item row="0" column="0">
-    <widget class="QWidget" name="mainPage" native="true"/>
+    <widget class="QWidget" name="mainPage" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="../../../res/MusicPlayer.qrc"/>
+ </resources>
  <connections/>
 </ui>
