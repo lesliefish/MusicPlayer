@@ -28,14 +28,6 @@ QToolButton:hover
 	border:none;
 }
 
-QLabel
-{
-	border:none;
-	color:white;
-	font-family : microsoft yahei;
-	font-size:12px;
-}
-
 QPushButton
 {
 	border:none;
@@ -59,11 +51,28 @@ QWidget#winTitle
 	border-top-left-radius:5px;
 }
 
-QWidget#m_closeBtn
+QPushButton#m_closeBtn
 {
-	border:none;
-	border-radius:0px;
-	color:white;
+	color:#999999;
+	font-size : 15px;
+}
+
+QPushButton#m_closeBtn:hover
+{
+	font-size : 15px;
+	color : red;
+}
+
+QPushButton#m_minBtn
+{
+	color:#999999;
+	font-size : 15px;
+}
+
+QPushButton#m_minBtn:hover
+{
+	font-size : 15px;
+	color : red;
 }
 
 QPushButton#playBtn
@@ -86,6 +95,12 @@ QPushButton#nextBtn:hover
 	border-image:url(:/new/player/next_hor.png);
 }
 
+QPushButton#nextBtn:pressed
+{
+	border-image:url(:/new/player/next.png);
+}
+
+
 QPushButton#preBtn
 {
 	border-image:url(:/new/player/previous.png);
@@ -96,6 +111,12 @@ QPushButton#preBtn:hover
 	border-image:url(:/new/player/previous_hor.png);
 }
 
+QPushButton#preBtn:pressed
+{
+	border-image:url(:/new/player/previous.png);
+}
+
+
 QPushButton#stopBtn
 {
 	border-image:url(:/new/player/stop.png);
@@ -104,6 +125,11 @@ QPushButton#stopBtn
 QPushButton#stopBtn:hover
 {
 	border-image:url(:/new/player/stop_hor.png);
+}
+
+QPushButton#stopBtn:pressed
+{
+	border-image:url(:/new/player/stop.png);
 }
 
 QPushButton#playListBtn
@@ -116,6 +142,12 @@ QPushButton#playListBtn:hover
 	border-image:url(:/new/player/list_hor.png);
 }
 
+
+QPushButton#playListBtn:pressed
+{
+	border-image:url(:/new/player/list.png);
+}
+
 QPushButton#addMusicBtn
 {
 	border-image:url(:/new/player/add.png);
@@ -124,6 +156,32 @@ QPushButton#addMusicBtn
 QPushButton#addMusicBtn:hover
 {
 	border-image:url(:/new/player/add_hor.png);
+}
+
+QPushButton#addMusicBtn:pressed
+{
+	border-image:url(:/new/player/add.png);
+}
+
+QLabel
+{
+	border:none;
+	color:white;
+	font-family : microsoft yahei;
+	font-size:12px;
+}
+
+QLabel#volumeLabel
+{
+	border:none;
+	border-image:url(:/new/player/volume.png);
+}
+
+QLabel#musicThemeLabel
+{
+	border:none;
+	border-image:url(:/new/player/title_icon.jpg);
+	border-radius : 35px;
 }
 
 QScrollBar:horizontal
