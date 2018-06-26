@@ -1,6 +1,6 @@
 QWidget#mainPage
 {
-	background : #F82A7C;
+	background : qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 98, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(55, 135, 55, 225));
 	color : white;
 	border-radius:5px;
 }
@@ -45,7 +45,6 @@ QPushButton
 
 QPushButton:hover
 {
-	background:red;
 	border:none;
 	border-radius:0px;
 }
@@ -60,11 +59,71 @@ QWidget#winTitle
 	border-top-left-radius:5px;
 }
 
-QPushButton#m_closeBtn
+QWidget#m_closeBtn
 {
 	border:none;
 	border-radius:0px;
 	color:white;
+}
+
+QPushButton#playBtn
+{
+	border-image:url(:/new/player/play.png);
+}
+
+QPushButton#playBtn:hover
+{
+	border-image:url(:/new/player/play_hor.png);
+}
+
+QPushButton#nextBtn
+{
+	border-image:url(:/new/player/next.png);
+}
+
+QPushButton#nextBtn:hover
+{
+	border-image:url(:/new/player/next_hor.png);
+}
+
+QPushButton#preBtn
+{
+	border-image:url(:/new/player/previous.png);
+}
+
+QPushButton#preBtn:hover
+{
+	border-image:url(:/new/player/previous_hor.png);
+}
+
+QPushButton#stopBtn
+{
+	border-image:url(:/new/player/stop.png);
+}
+
+QPushButton#stopBtn:hover
+{
+	border-image:url(:/new/player/stop_hor.png);
+}
+
+QPushButton#playListBtn
+{
+	border-image:url(:/new/player/list.png);
+}
+
+QPushButton#playListBtn:hover
+{
+	border-image:url(:/new/player/list_hor.png);
+}
+
+QPushButton#addMusicBtn
+{
+	border-image:url(:/new/player/add.png);
+}
+
+QPushButton#addMusicBtn:hover
+{
+	border-image:url(:/new/player/add_hor.png);
 }
 
 QScrollBar:horizontal

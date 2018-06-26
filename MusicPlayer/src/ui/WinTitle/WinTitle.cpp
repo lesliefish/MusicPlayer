@@ -22,8 +22,10 @@ void WinTitle::initUi()
 
     m_minBtn = new QPushButton();
     m_minBtn->setFixedSize(iconSize);
+    m_minBtn->setObjectName("m_minBtn");
     m_closeBtn = new QPushButton();
     m_closeBtn->setFixedSize(iconSize);
+    m_closeBtn->setObjectName("m_closeBtn");
 
     QHBoxLayout* layout = new QHBoxLayout();
     layout->addWidget(m_titleBtn);

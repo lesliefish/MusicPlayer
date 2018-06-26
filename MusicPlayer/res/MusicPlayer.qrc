@@ -11,6 +11,12 @@
         <file>close.png</file>
         <file>title_icon.jpg</file>
         <file>stop.png</file>
-        <file>plus.png</file>
+        <file>play_hor.png</file>
+        <file>next_hor.png</file>
+        <file>previous_hor.png</file>
+        <file>stop_hor.png</file>
+        <file>list_hor.png</file>
+        <file>add.png</file>
+        <file>add_hor.png</file>
     </qresource>
 </RCC>

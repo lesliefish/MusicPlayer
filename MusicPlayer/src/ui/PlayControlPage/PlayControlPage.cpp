@@ -17,11 +17,7 @@ PlayControlPage::~PlayControlPage()
 
 void PlayControlPage::initUi()
 {
-    ui->preBtn->setIcon(QIcon(":/new/player/previous.png"));
-    ui->nextBtn->setIcon(QIcon(":/new/player/next.png"));
-    ui->playBtn->setIcon(QIcon(":/new/player/play.png"));
-    ui->stopBtn->setIcon(QIcon(":/new/player/stop.png"));
-    ui->playListBtn->setIcon(QIcon(":/new/player/list.png"));
+
 }
 
 void PlayControlPage::initConnect()
