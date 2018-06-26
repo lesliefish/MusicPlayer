@@ -1,8 +1,17 @@
 QWidget#mainPage
 {
-	background : qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:2, fx:0.284, fy:0.324, stop:0 rgba(16, 164, 198, 255), stop:1 rgba(255, 255, 255, 255));
+	background : #F82A7C;
 	color : white;
 	border-radius:5px;
+}
+
+
+QWidget#bottomWidget
+{
+	background : black;
+	color : white;
+	border-bottom-right-radius : 5px;
+	border-bottom-left-radius : 5px;
 }
 
 QToolButton
@@ -24,7 +33,7 @@ QLabel
 	border:none;
 	color:white;
 	font-family : microsoft yahei;
-	font-size:14px;
+	font-size:12px;
 }
 
 QPushButton
@@ -43,7 +52,7 @@ QPushButton:hover
 
 QWidget#winTitle
 {
-	background : qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:2, fx:0.284, fy:0.324, stop:0 rgba(16, 164, 198, 255), stop:1 rgba(255, 255, 255, 255));
+	background : black;
 	color : white;
 	font-family : microsoft yahei;
 	font-size:15px;
@@ -60,17 +69,18 @@ QPushButton#m_closeBtn
 
 QScrollBar:horizontal
 {
-	height:3px;
-	border-radius:5px;
+	height:6px;
+	border-radius:3px;
 	margin:0px,0px,0px,0px;
 	padding-left:0px;
 	padding-right:0px;
 }
+
 QScrollBar::handle:horizontal
 {
 	background:lightblue;
 	border:0px solid #525252;
-	width:2px;
+	width:1px;
 }
 QScrollBar::handle:horizontal::disabled
 {

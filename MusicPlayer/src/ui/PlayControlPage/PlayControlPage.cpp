@@ -21,9 +21,7 @@ void PlayControlPage::initUi()
     ui->nextBtn->setIcon(QIcon(":/new/player/next.png"));
     ui->playBtn->setIcon(QIcon(":/new/player/play.png"));
     ui->stopBtn->setIcon(QIcon(":/new/player/stop.png"));
-    ui->volumeBtn->setIcon(QIcon(":/new/player/volume.png"));
-    ui->listBtn->setIcon(QIcon(":/new/player/list.png"));
-    ui->addBtn->setIcon(QIcon(":/new/player/plus.png"));
+    ui->playListBtn->setIcon(QIcon(":/new/player/list.png"));
 }
 
 void PlayControlPage::initConnect()

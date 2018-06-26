@@ -43,6 +43,8 @@ void WinTitle::initUi()
 
     m_closeBtn->setText(QString::fromLocal8Bit("¡Á"));
     m_minBtn->setText("-");
+
+    this->setFixedHeight(24);
 }
 
 void WinTitle::initConnect()

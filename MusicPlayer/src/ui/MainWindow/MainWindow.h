@@ -2,7 +2,6 @@
 
 #include <QWidget>
 #include "FramelessWidget.h"
-#include "MusicInfoPage.h"
 #include "WinTitle.h"
 #include "PlayControlPage.h"
 #include "Player.h"
@@ -23,7 +22,6 @@ private:
 private:
 	Ui::MainWindow *ui;
 
-    MusicInfoPage* m_musicInfoPage{ nullptr };
     WinTitle* m_winTitle{ nullptr };
     PlayControlPage* m_playControlPage{ nullptr };
     Player* m_player{ nullptr };

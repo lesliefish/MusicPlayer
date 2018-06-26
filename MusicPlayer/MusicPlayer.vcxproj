@@ -14,7 +14,6 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\module\Player\Player.cpp" />
     <ClCompile Include="src\ui\MainWindow\MainWindow.cpp" />
-    <ClCompile Include="src\ui\MusicInfoPage\MusicInfoPage.cpp" />
     <ClCompile Include="src\ui\PlayControlPage\PlayControlPage.cpp" />
     <ClCompile Include="src\ui\Public\FramelessWidget\FramelessWidget.cpp" />
     <ClCompile Include="src\ui\WinTitle\WinTitle.cpp" />
@@ -24,15 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\ui\MainWindow\MainWindow.ui" />
-    <QtUic Include="src\ui\MusicInfoPage\MusicInfoPage.ui" />
     <QtUic Include="src\ui\PlayControlPage\PlayControlPage.ui" />
     <QtUic Include="src\ui\Public\FramelessWidget\FramelessWidget.ui" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="src\ui\MusicInfoPage\MusicInfoPage.h">
-      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;.\src\ui\MainWindow</IncludePath>
-      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;.\src\ui\MainWindow</IncludePath>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\ui\Public\FramelessWidget\FramelessWidget.h">
