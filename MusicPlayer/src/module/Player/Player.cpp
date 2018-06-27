@@ -49,8 +49,8 @@ void Player::previous()
 
 /** 
  * @fn     Player::addMusic
- * @brief  Ìí¼ÓÒôÀÖ
- * @param  const QString & path musicÂ·¾¶
+ * @brief  æ·»åŠ éŸ³ä¹
+ * @param  const QString & path musicè·¯å¾„
  * @return void
  */
 void Player::addMusic(const QString& path)
@@ -60,7 +60,7 @@ void Player::addMusic(const QString& path)
 
 /** 
  * @fn     Player::getPlayState
- * @brief  »ñÈ¡µ±Ç°²¥·Å×´Ì¬
+ * @brief  è·å–å½“å‰æ’­æ”¾çŠ¶æ€
  * @return QMediaPlayer::State
  */
 QMediaPlayer::State Player::getPlayState() const

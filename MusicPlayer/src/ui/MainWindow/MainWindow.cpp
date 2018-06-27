@@ -84,7 +84,7 @@ void MainWindow::initQss()
 
 /** 
  * @fn     MainWindow::playMusic
- * @brief  ²¥·Å»òÔİÍ£
+ * @brief  æ’­æ”¾æˆ–æš‚åœ
  * @return void
  */
 void MainWindow::playMusic()
