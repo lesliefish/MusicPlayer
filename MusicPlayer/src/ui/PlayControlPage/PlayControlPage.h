@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QWidget>
+#include <QMediaPlayer>
+#include "Player.h"
 namespace Ui { class PlayControlPage; };
 
 
@@ -12,28 +14,20 @@ public:
     PlayControlPage(QWidget *parent = Q_NULLPTR);
     ~PlayControlPage();
 
-    enum PlayState
-    {
-        Stop,
-        Playing,
-        Pause
-    };
-
 public:
-    void setPlayBtnQss(PlayState state);
+    void setPlayBtnQss(QMediaPlayer::State state);
 signals:
-    void signalPlay();
-    void signalNext();
-    void signalPrevious();
-    void signalStop();
-    void signalAddMusic();
+    
 private:
     void initUi();
     void initConnect();
-
+    void addMusic();
+    void playMusic();
 private:
     Ui::PlayControlPage *ui;
 
     QString m_qssPlayStyle;
     QString m_qssPauseStyle;
+
+    Player* m_player{ nullptr };
 };

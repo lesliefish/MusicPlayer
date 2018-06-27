@@ -1,7 +1,5 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-#include <QDesktopServices>
-#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
 	: FramelessWidget(parent)
@@ -15,7 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
 	delete ui;
-    delete m_player;
 }
 
 void MainWindow::initUi()
@@ -37,7 +34,6 @@ void MainWindow::initUi()
     this->setWindowTitle(tr("Music Player"));
     this->setWindowIcon(QIcon(":/new/player/title_icon.jpg"));
 
-    m_player = new Player();
     initQss();
 }
 
@@ -51,29 +47,6 @@ void MainWindow::initConnect()
     {
         this->showMinimized();
     });
-
-    connect(m_playControlPage, &PlayControlPage::signalPlay, this, &MainWindow::playMusic);
-
-    connect(m_playControlPage, &PlayControlPage::signalNext, this, [this]()
-    {
-        m_player->next();
-    });
-
-    connect(m_playControlPage, &PlayControlPage::signalPrevious, this, [this]()
-    {
-        m_player->previous();
-    });
-
-    connect(m_playControlPage, &PlayControlPage::signalStop, this, [this]()
-    {
-        m_player->stop();
-        m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(QMediaPlayer::PausedState));
-    });
-
-    connect(m_playControlPage, &PlayControlPage::signalAddMusic, this, [this]()
-    {
-        addMusic();
-    });
 }
 
 void MainWindow::initQss()
@@ -85,29 +58,4 @@ void MainWindow::initQss()
         QString style = file.readAll();
         this->setStyleSheet(style);
     }
-}
-
-/** 
- * @fn     MainWindow::playMusic
- * @brief  播放或暂停
- * @return void
- */
-void MainWindow::playMusic()
-{
-    m_player->play();
-    m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(m_player->getPlayState()));
-}
-
-void MainWindow::addMusic()
-{
-    auto fileList = QFileDialog::getOpenFileNames(nullptr, tr("Choose Music"), ".", "*.mp3");
-    
-    for (const auto& iter : fileList)
-    {
-        m_player->addMusic(iter);
-    }
-}
-
-void MainWindow::updateMusicInfo()
-{
 }

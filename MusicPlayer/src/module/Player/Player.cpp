@@ -8,8 +8,8 @@ Player::Player()
 
 Player::~Player()
 {
-
 }
+
 
 void Player::init()
 {
@@ -18,6 +18,14 @@ void Player::init()
     m_mediaPlayer->setPlaylist(m_playerList);
     m_mediaPlayer->setVolume(50);
     m_playerList->setPlaybackMode(QMediaPlaylist::Loop);
+}
+
+void Player::initConnect()
+{
+    connect(m_mediaPlayer, &QMediaPlayer::currentMediaChanged, this, [this](const auto& currentMediaContent)
+    {
+        emit signalCurrentMediaChanged(currentMediaContent);
+    });
 }
 
 void Player::stop()
@@ -66,9 +74,4 @@ void Player::addMusic(const QString& path)
 QMediaPlayer::State Player::getPlayState() const
 {
     return m_mediaPlayer->state();
-}
-
-QMediaContent Player::getCurrentMediaContent() const
-{
-    return m_mediaPlayer->currentMedia();
 }
