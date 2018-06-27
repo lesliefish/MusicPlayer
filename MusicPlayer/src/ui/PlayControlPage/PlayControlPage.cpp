@@ -42,6 +42,7 @@ void PlayControlPage::initUi()
         "QPushButton#playBtn:pressed{ border-image:url(:/new/player/pause.png);}";
 
     m_player = new Player();
+    m_curMediaContent = new QMediaContent();
 }
 
 void PlayControlPage::initConnect()
@@ -66,10 +67,9 @@ void PlayControlPage::initConnect()
         m_player->stop();
     });
 
-    connect(ui->addMusicBtn, &QPushButton::clicked, [this]()
-    {
-        addMusic();
-    });
+    connect(ui->addMusicBtn, &QPushButton::clicked, [this]() {addMusic(); });
+
+    connect(m_player, &Player::signalCurrentMediaChanged, this, &PlayControlPage::updateCurrentMusicInfo);
 }
 
 void PlayControlPage::addMusic()
@@ -84,7 +84,10 @@ void PlayControlPage::addMusic()
 
 void PlayControlPage::playMusic()
 {
+    // ²¥·ÅÒôÀÖ
     m_player->play();
+    
+    // ÉèÖÃ²¥·Å°´Å¥×´Ì¬
     if (m_player->getPlayState() == QMediaPlayer::PlayingState)
     {
         setPlayBtnQss(QMediaPlayer::PausedState);
@@ -93,4 +96,12 @@ void PlayControlPage::playMusic()
     {
         setPlayBtnQss(QMediaPlayer::PlayingState);
     }
+}
+
+void PlayControlPage::updateCurrentMusicInfo(const QMediaContent& mediaContent)
+{
+    *m_curMediaContent = mediaContent;
+    auto res = m_curMediaContent->resources();
+    auto iter = res.begin();
+    auto x = iter->dataSize();
 }

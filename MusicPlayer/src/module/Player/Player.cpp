@@ -4,6 +4,7 @@ Player::Player()
     : QObject()
 {
     init();
+    initConnect();
 }
 
 Player::~Player()
@@ -74,4 +75,9 @@ void Player::addMusic(const QString& path)
 QMediaPlayer::State Player::getPlayState() const
 {
     return m_mediaPlayer->state();
+}
+
+QStringList & Player::getCurMediaContent() const
+{
+    return m_mediaPlayer->availableMetaData();
 }

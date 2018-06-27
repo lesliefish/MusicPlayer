@@ -23,6 +23,7 @@ private:
     void initConnect();
     void addMusic();
     void playMusic();
+    void updateCurrentMusicInfo(const QMediaContent& mediaContent);
 private:
     Ui::PlayControlPage *ui;
 
@@ -30,4 +31,5 @@ private:
     QString m_qssPauseStyle;
 
     Player* m_player{ nullptr };
+    QMediaContent* m_curMediaContent{ nullptr };
 };
