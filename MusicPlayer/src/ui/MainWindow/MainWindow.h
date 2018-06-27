@@ -19,6 +19,9 @@ public:
 private:
     void initUi();
     void initConnect();
+    void initQss();
+
+    void playMusic();
 private:
 	Ui::MainWindow *ui;
 

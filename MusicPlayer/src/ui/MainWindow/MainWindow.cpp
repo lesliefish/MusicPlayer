@@ -35,16 +35,10 @@ void MainWindow::initUi()
     this->setWindowTitle(tr("Music Player"));
     this->setWindowIcon(QIcon(":/new/player/title_icon.jpg"));
 
-    // style
-    QFile file("./res/MusicPlayer.qss");
-    if (file.exists() && file.open(QIODevice::ReadOnly | QIODevice::Text))
-    {
-        QString style = file.readAll();
-        this->setStyleSheet(style);
-    }
-
     m_player = new Player();
-    m_player->addMusic("C:/Users/Public/Music/Sample Music/Kalimba.mp3");
+    m_player->addMusic("C:/Users/Public/Music/Sample Music/Sleep Away.mp3");
+
+    initQss();
 }
 
 void MainWindow::initConnect()
@@ -58,10 +52,7 @@ void MainWindow::initConnect()
         this->showMinimized();
     });
 
-    connect(m_playControlPage, &PlayControlPage::signalPlay, this, [this]()
-    {
-        m_player->play();
-    });
+    connect(m_playControlPage, &PlayControlPage::signalPlay, this, &MainWindow::playMusic);
 
     connect(m_playControlPage, &PlayControlPage::signalNext, this, [this]()
     {
@@ -76,5 +67,28 @@ void MainWindow::initConnect()
     connect(m_playControlPage, &PlayControlPage::signalStop, this, [this]()
     {
         m_player->stop();
+        m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(QMediaPlayer::PausedState));
     });
+}
+
+void MainWindow::initQss()
+{
+    // style
+    QFile file("./res/MusicPlayer.qss");
+    if (file.exists() && file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        QString style = file.readAll();
+        this->setStyleSheet(style);
+    }
+}
+
+/** 
+ * @fn     MainWindow::playMusic
+ * @brief  ²¥·Å»òÔÝÍ£
+ * @return void
+ */
+void MainWindow::playMusic()
+{
+    m_player->play();
+    m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(m_player->getPlayState()));
 }

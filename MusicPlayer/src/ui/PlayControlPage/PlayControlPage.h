@@ -11,6 +11,16 @@ public:
     PlayControlPage(QWidget *parent = Q_NULLPTR);
     ~PlayControlPage();
 
+    enum PlayState
+    {
+        Stop,
+        Playing,
+        Pause
+    };
+
+public:
+    void setPlayBtnQss(PlayState state);
+
 signals:
     void signalPlay();
     void signalNext();
@@ -19,6 +29,10 @@ signals:
 private:
     void initUi();
     void initConnect();
+
 private:
     Ui::PlayControlPage *ui;
+
+    QString m_qssPlayStyle;
+    QString m_qssPauseStyle;
 };

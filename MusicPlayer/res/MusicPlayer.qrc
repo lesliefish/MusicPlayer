@@ -18,5 +18,6 @@
         <file>list_hor.png</file>
         <file>add.png</file>
         <file>add_hor.png</file>
+        <file>pause_hor.png</file>
     </qresource>
 </RCC>

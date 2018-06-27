@@ -18,6 +18,8 @@ public:
     void play();
     void previous();
     void addMusic(const QString& path);
+    QMediaPlayer::State getPlayState() const;
+
 private:
     void init();
 

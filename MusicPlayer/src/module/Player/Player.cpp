@@ -47,7 +47,23 @@ void Player::previous()
     m_playerList->previous();
 }
 
+/** 
+ * @fn     Player::addMusic
+ * @brief  添加音乐
+ * @param  const QString & path music路径
+ * @return void
+ */
 void Player::addMusic(const QString& path)
 {
     m_playerList->addMedia(QUrl(path));
+}
+
+/** 
+ * @fn     Player::getPlayState
+ * @brief  获取当前播放状态
+ * @return QMediaPlayer::State
+ */
+QMediaPlayer::State Player::getPlayState() const
+{
+    return m_mediaPlayer->state();
 }

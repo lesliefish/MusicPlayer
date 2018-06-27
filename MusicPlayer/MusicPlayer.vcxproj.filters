@@ -102,4 +102,9 @@
       <Filter>Resources</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\module\Public.h">
+      <Filter>Source Files\module</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
