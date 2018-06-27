@@ -67,3 +67,8 @@ QMediaPlayer::State Player::getPlayState() const
 {
     return m_mediaPlayer->state();
 }
+
+QMediaContent Player::getCurrentMediaContent() const
+{
+    return m_mediaPlayer->currentMedia();
+}

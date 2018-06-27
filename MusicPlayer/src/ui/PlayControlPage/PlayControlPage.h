@@ -3,6 +3,7 @@
 #include <QWidget>
 namespace Ui { class PlayControlPage; };
 
+
 class PlayControlPage : public QWidget
 {
     Q_OBJECT
@@ -20,12 +21,12 @@ public:
 
 public:
     void setPlayBtnQss(PlayState state);
-
 signals:
     void signalPlay();
     void signalNext();
     void signalPrevious();
     void signalStop();
+    void signalAddMusic();
 private:
     void initUi();
     void initConnect();

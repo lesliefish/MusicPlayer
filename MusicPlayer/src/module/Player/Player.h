@@ -19,7 +19,7 @@ public:
     void previous();
     void addMusic(const QString& path);
     QMediaPlayer::State getPlayState() const;
-
+    QMediaContent getCurrentMediaContent() const;
 private:
     void init();
 

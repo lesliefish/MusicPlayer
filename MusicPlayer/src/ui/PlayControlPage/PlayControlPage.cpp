@@ -61,4 +61,9 @@ void PlayControlPage::initConnect()
     {
         emit signalStop();
     });
+
+    connect(ui->addMusicBtn, &QPushButton::clicked, [this]()
+    {
+        emit signalAddMusic();
+    });
 }

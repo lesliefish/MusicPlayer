@@ -1,5 +1,7 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
+#include <QDesktopServices>
+#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
 	: FramelessWidget(parent)
@@ -36,8 +38,6 @@ void MainWindow::initUi()
     this->setWindowIcon(QIcon(":/new/player/title_icon.jpg"));
 
     m_player = new Player();
-    m_player->addMusic("C:/Users/Public/Music/Sample Music/Sleep Away.mp3");
-
     initQss();
 }
 
@@ -69,6 +69,11 @@ void MainWindow::initConnect()
         m_player->stop();
         m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(QMediaPlayer::PausedState));
     });
+
+    connect(m_playControlPage, &PlayControlPage::signalAddMusic, this, [this]()
+    {
+        addMusic();
+    });
 }
 
 void MainWindow::initQss()
@@ -91,4 +96,18 @@ void MainWindow::playMusic()
 {
     m_player->play();
     m_playControlPage->setPlayBtnQss((PlayControlPage::PlayState)(m_player->getPlayState()));
+}
+
+void MainWindow::addMusic()
+{
+    auto fileList = QFileDialog::getOpenFileNames(nullptr, tr("Choose Music"), ".", "*.mp3");
+    
+    for (const auto& iter : fileList)
+    {
+        m_player->addMusic(iter);
+    }
+}
+
+void MainWindow::updateMusicInfo()
+{
 }
